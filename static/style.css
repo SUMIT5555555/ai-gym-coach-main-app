@@ -1,0 +1,241 @@
+/* ======================================================================
+   GLOBAL THEME
+====================================================================== */
+
+.stApp {
+  background: radial-gradient(
+    circle at 50% 55%,
+    #181c2e 0%,
+    #0e0f12 65%,
+    #08080a 100%
+  ) !important;
+  color: #e3e2e6 !important;
+}
+
+[data-testid="stSidebar"] {
+  background-color: rgba(19, 19, 20, 0.85) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+/* ======================================================================
+   TYPOGRAPHY
+====================================================================== */
+
+.block-container,
+.block-container * {
+  font-family: "AdobeClean", sans-serif !important;
+}
+
+h1,
+h2,
+h3 {
+  color: #e3e2e6 !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.02em !important;
+}
+
+p,
+label,
+span {
+  color: #c4c7c5 !important;
+}
+
+/* ======================================================================
+   LAYOUT & CONTAINER SPACING
+====================================================================== */
+
+.block-container {
+  padding: 40px 3rem !important;
+  max-width: 800px !important;
+}
+
+/* ======================================================================
+   GEMINI ROUNDED PILL BUTTONS
+====================================================================== */
+div[data-testid="stButton"] > button,
+div[data-testid="stFormSubmitButton"] > button,
+div[data-testid="stDownloadButton"] > button,
+button[data-testid="stBaseButton-secondary"],
+button[data-testid="stBaseButton-primary"],
+.stButton > button {
+  background: #1e1f20 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #e3e2e6 !important;
+  border-radius: 24px !important;
+  font-weight: 500 !important;
+  padding: 0.6rem 1.4rem !important;
+  transition: all 0.25s ease !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+div[data-testid="stButton"] > button:hover,
+div[data-testid="stFormSubmitButton"] > button:hover,
+div[data-testid="stDownloadButton"] > button:hover,
+button[data-testid="stBaseButton-secondary"]:hover,
+button[data-testid="stBaseButton-primary"]:hover,
+.stButton > button:hover {
+  background: #282a2c !important;
+  border-color: rgba(168, 199, 250, 0.5) !important;
+  color: #a8c7fa !important;
+  box-shadow: 0 0 16px rgba(124, 172, 248, 0.2) !important;
+  transform: translateY(-1px) !important;
+}
+
+div[data-testid="stButton"] > button:active,
+div[data-testid="stFormSubmitButton"] > button:active {
+  transform: translateY(0px) !important;
+}
+
+[data-testid="stNumberInputContainer"] button {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+[data-testid="stNumberInputContainer"] button:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #a8c7fa !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* ======================================================================
+   INPUTS, SELECTBOXES & NUMBER INPUTS (GEMINI PILL SHAPE)
+====================================================================== */
+.stTextInput > div > div > div,
+.stTextArea > div > div > div,
+[data-testid="stSelectbox"] > div > div,
+[data-baseweb="select"] > div,
+[data-testid="stNumberInputContainer"] {
+  background: #1e1f20 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 20px !important;
+  color: #e3e2e6 !important;
+  backdrop-filter: blur(12px) !important;
+  transition: all 0.25s ease !important;
+  overflow: hidden !important;
+}
+
+.stTextInput input,
+.stTextInput div[data-baseweb="base-input"],
+.stTextArea textarea {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #e3e2e6 !important;
+}
+
+.stTextInput > div > div > div:focus-within,
+.stTextArea > div > div > div:focus-within,
+[data-baseweb="select"] > div:focus-within,
+[data-testid="stNumberInputContainer"]:focus-within {
+  border-color: #a8c7fa !important;
+  box-shadow: 0 0 14px rgba(168, 199, 250, 0.25) !important;
+}
+
+/* ======================================================================
+   GEMINI GLASS CARDS & METRICS
+====================================================================== */
+
+[data-testid="stMetric"] {
+  background: rgba(30, 31, 32, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 1.2rem !important;
+  border-radius: 18px !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+  transition: all 0.3s ease !important;
+}
+
+[data-testid="stMetric"]:hover {
+  border-color: rgba(168, 199, 250, 0.3) !important;
+  background: rgba(35, 37, 40, 0.7) !important;
+  box-shadow: 0 8px 28px rgba(168, 199, 250, 0.1) !important;
+}
+
+[data-testid="stMetricValue"] {
+  font-size: 1.65rem !important;
+  font-weight: 500 !important;
+  color: #a8c7fa !important;
+}
+
+[data-testid="stMetricLabel"] {
+  font-size: 14px !important;
+  color: #c4c7c5 !important;
+}
+
+/* ======================================================================
+   LOGIN FORM & WORKOUT PLAN CONTAINERS
+====================================================================== */
+
+.stForm {
+  background: rgba(30, 31, 32, 0.55) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 24px !important;
+  padding: 2rem !important;
+  backdrop-filter: blur(16px) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Dashed Setup Box */
+div[style*="dashed"] {
+  border: 1.5px dashed rgba(168, 199, 250, 0.3) !important;
+  background: rgba(30, 31, 32, 0.3) !important;
+  border-radius: 24px !important;
+  backdrop-filter: blur(12px) !important;
+  transition: all 0.3s ease !important;
+}
+
+div[style*="dashed"]:hover {
+  border-color: #a8c7fa !important;
+  background: rgba(30, 31, 32, 0.5) !important;
+}
+
+/* ======================================================================
+   AI COACH BAR (SOFT BLUE ALERT)
+====================================================================== */
+
+.stAlert,
+[data-testid="stNotification"] {
+  background: rgba(168, 199, 250, 0.12) !important;
+  border: 1px solid rgba(168, 199, 250, 0.35) !important;
+  color: #a8c7fa !important;
+  border-radius: 18px !important;
+  backdrop-filter: blur(12px) !important;
+  box-shadow: 0 0 20px rgba(168, 199, 250, 0.15) !important;
+}
+
+/* ======================================================================
+   WORKOUT HISTORY GEMINI TABLE
+====================================================================== */
+
+.stTable,
+table {
+  background: rgba(30, 31, 32, 0.4) !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.stTable th {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #a8c7fa !important;
+  font-weight: 500 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.stTable td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+  color: #e3e2e6 !important;
+}
+
+.stTable tr:hover td {
+  background: rgba(168, 199, 250, 0.05) !important;
+}
