@@ -26,8 +26,6 @@
 
 ## 🛠️ Tech Stack & Architecture
 
-This project is structured as a **monorepo** containing both the interactive main app and the public web landing page.
-
 ```text
 └── Main App/               # Streamlit application (Deployed on Streamlit Cloud)
     ├── main.py
