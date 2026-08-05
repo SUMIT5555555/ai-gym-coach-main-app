@@ -22,6 +22,7 @@ env/
 # -----------------------------
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # -----------------------------
 # Database
@@ -39,4 +40,3 @@ Main App/data.db
 # IDEs / Editors
 # -----------------------------
 .vscode/
-

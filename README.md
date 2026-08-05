@@ -29,12 +29,6 @@
 This project is structured as a **monorepo** containing both the interactive main app and the public web landing page.
 
 ```text
-apex-form-ai/
-├── assets/                 # Screenshots, GIFs, and media
-├── landing-page/           # Static landing page (Deployed on Netlify)
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
 └── Main App/               # Streamlit application (Deployed on Streamlit Cloud)
     ├── main.py
     ├── requirements.txt
