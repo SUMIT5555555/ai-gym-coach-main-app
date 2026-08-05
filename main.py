@@ -16,18 +16,21 @@ from groq import Groq
 from services.coaching.llm import LLMCoach
 from services.coaching.tts import TextToSpeech
 from services.coaching.voice_pipeline import VoicePipeline, autoplay_audio
+from PIL import Image
 
 # me2
 load_dotenv()
 
 
 def main():
+    
+    logo = Image.open("assets/icon.png")
 
     st.set_page_config(
-        page_icon="🏋️‍♀️",
-        page_title="AI Real-time GYM Coach",
+        page_icon=logo,
+        page_title="RepPulse AI | Gym Coach",
         initial_sidebar_state="expanded",
-        layout="centered",
+        layout="wide",
     )
 
     load_css(os.path.join(os.getcwd(), "static", "style.css"))

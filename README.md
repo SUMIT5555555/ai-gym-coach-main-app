@@ -8,7 +8,7 @@
 ## 📸 Sneak Peek
 
 <p align="center">
-  <img src="Assets/dashboard.png" alt="AI GYM COACH" width="100%" />
+  <img src="assets/dashboard.png" alt="AI GYM COACH" width="100%" />
 </p>
 
 ---
