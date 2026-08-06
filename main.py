@@ -28,7 +28,7 @@ def main():
 
     st.set_page_config(
         page_icon=logo,
-        page_title="RepPulse AI | Gym Coach",
+        page_title="RepPulse AI | App",
         initial_sidebar_state="expanded",
         layout="wide",
     )
